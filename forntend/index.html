@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="personal portfolio">
+    <meta name="keywords" content="portfolio, html, css ,js, javascrip, portfolio website">
+    <meta name="author" content="Shubham shinde">
+    <link rel="shortcut icon" href="../imgs/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylep23.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>self</title>
+</head>
+<body>
+    <header class="header">
+        <img src="../imgs/download.png" alt="main-logo" class="main-logo">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="#home"  class="nav-link"> HOME</a></li>
+                <li><a href="#about" class="nav-link"> ABOUT</a></li>
+                <li><a href="#skill" class="nav-link"> SKILL</a></li>
+                <li><a href="https://github.com/shubhamshinde01" target="_blank" class="nav-link"> WORK</a></li>
+                <li><a href="#contact" class="nav-link"> CONTACT</a></li>
+            </ul>
+            
+        </nav>
+        <div class="menu-icons">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </header>
+
+<!-- ************MAIN SECTION*******************? -->
+    <main id="home">
+         <div class="container grid grid-2">
+             <div class="main-left">  
+                <p class="main-bio"> Hi <span class="target1">,</span>  <br> I'm<h1 class="main-title">SHUBHAM SHINDE</h1><h2 class="main-subtitle">web developer </h2>
+                </p>
+                <br>  <button class="main-contact btn">CONTACT</button>
+            </div>      
+
+            <!-- ********MAIN RIGHT SECTION> -->
+            <div class="main-right img ">
+                <img src="../imgs/Untitled design.jpg" alt="main-image">
+            </div>
+        </div>  
+    
+
+
+    </main>
+    <!-- **********about section********* -->
+
+    <section class="about" id="about" >
+        <div class="container-2 grid grid-2">
+            <div class="about-left img">
+                <img src="../imgs/Screenshot_20230125-205755_WhatsApp-removebg-preview.png" alt="full body image">
+            </div>
+            <div class="about-right ">
+                <p class="about-data" >Welcome To You, <br> 
+                    Hi, i'm Shubham Shinde. Pursuring A Degree Of Bachelor's Of Engineering In Mechanical Engineering At <br>
+                    Dr.D.Y.Patil Institute Of Technology, Pimpri, Pune, 411018. <br>
+                    To Know More About ME Click Below Button </p>
+                <a href="../imgs/SMHD16 SHUBHAM SHINDE.pdf"   target="_blank"><button class="cv btn">Download CV</button></a>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- /* skill section********************** */ -->
+    <section class="container-skills" id="skill">
+        <div class="skills-title heading ">
+        <span>  SKILLS</span>
+
+        </div>
+        <div class="skills">
+            <div class="skill-name">HTML
+                <div class="skill-status skill-status-html  "> <span> 97% </span></div>
+            </div>
+            <div class="skill-name">CSS
+                <div class="skill-status skill-status-css"><span> 92%</span></div>
+
+            </div>
+            <div class="skill-name">JS
+                <div class="skill-status skill-status-js"> <span>90%</span></div>
+            </div>
+            <div class="skill-name">NODE.JS
+                <div class="skill-status skill-status-node"><span> 85% </span></div>
+            </div>
+            <div class="skill-name">EXPRESS.JS
+                <div class="skill-status skill-status-exp"><span> 87%</span></div>
+            </div>
+            <div class="skill-name">MONGO.DB
+                <div class="skill-status skill-status-mongo "><span> 80%</span></div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- section contact*********** -->
+
+    <section class="contact" id="contact">
+        <div class="contact-title heading ">CONTACT</div>
+        <form action="https://formspree.io/f/moqzjwqw"  method="POST">
+            <div class="contact-form">
+                <input type="text" name="first-name" placeholder="first name*" minlength="2" id="" autocomplete="off" required>
+                <input type="text" name="last-name" required placeholder="last name*" minlength="3" autocomplete="off" id="">
+                <input type="email" name="email" required placeholder="userShubh@email.com*" minlength="11" autocomplete="off" id="">
+                <input type="number" name="" placeholder="contact number" autocomplete="off" id="">
+                <input type="text" name="message" placeholder="Enter Your Query" maxlength="100" autocomplete="off" >
+                <input type="submit" class="btn" value="submit">      
+            </div>
+        </form>
+
+    </section>
+    <!-- ***********footer***********        -->
+
+    <footer class="footer" >
+        <div class="icons">
+            <a href="#" class=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" class=""><i class="fa-brands fa-google"></i> </a>
+            <a href="" class=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/shubhamshinde01"> <i class="fa-brands fa-github"></i> </a>
+            <a href=""> <i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="copyright">
+            © 2023 Copyright:
+            <a href="">userShubh.com</a>
+        </div>
+
+    </footer>
+
+
+<script src="back.js"></script>
+
+    
+</body>
+</html>

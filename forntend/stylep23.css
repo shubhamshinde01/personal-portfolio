@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --heading:#000;
+    --para:#000;
+    --bg: #ffffff;
+    --imgbg:#ffaf01a6;
+    --shadow:#f4eeee;
+
+};
+html{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1,h3,h4{
+    font-family: 'Kanit', sans-serif;
+ 
+}
+h1{
+color: var(--heading);
+font-weight: 550;
+}
+p{
+    color: var(--para);
+}
+li{
+    list-style: none;
+  
+}
+a{
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+
+    font-weight: 400;
+    color: var(--para);
+    display: inline-block;
+    font-size: 1.4rem;
+   
+}
+
+
+
+
+/* header section */
+.header{
+    position: fixed;
+    width: 100%;
+    /* gap: 45%; */
+    z-index: 1;
+    opacity: 0.9;
+    /* overflow: hidden; */
+    padding: 0 50px;
+    height: 6rem;
+    background-color: var(--bg);
+    box-shadow: 0px 1px 15px var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-logo{
+    width: 5rem;
+}
+.navbar-list{
+    display: flex;
+    gap: 4rem;
+    font-weight: 400;
+}
+/* .nav-link:visited{
+    transition: all 0.4s linear;
+} */
+
+.nav-link:hover{
+    cursor: pointer;
+    color: var(--imgbg);
+    transition: all 0.4s linear;
+}
+
+
+/******************************************************
+ main section       8888888888888 */
+
+.grid-2{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2,1fr); 
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.container{
+    padding-top: 5rem;
+}
+/* .grid-2{
+   
+    grid-template-columns: repeat(2,1fr);
+
+} */
+.main-left{
+    padding-left: 50px;
+    padding-top: 50px;
+    align-items: flex-start;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .main-bio,.main-title{
+    font-weight: 600;
+    font-size: 4rem;
+}
+.main-bio span{
+    color: var(--imgbg);
+}
+
+.main-title{
+    color: var(--imgbg);
+    /* padding: 10px; */
+}
+.main-subtitle{
+    font-weight: 600;
+    font-size: 4rem;
+}
+.btn{
+    width: 30rem;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: var(--imgbg);
+    color: var(--para);
+    font-weight: 600;
+    margin-top: 15px;
+    box-shadow: 10px 10px 15px ;
+
+}
+.btn:hover,
+.btn:visited{
+    cursor: pointer;
+    transition: all 0.3s linear;
+    box-shadow: 15px 15px 18px ;
+
+}
+
+/* *************aboyt section************* 
+***********************************************/
+
+
+/* .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+.about-right{
+    padding-left: 50px;
+    /* padding-top: 50px; */
+    align-items: flex-start;
+}
+.about-data{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10rem;
+    padding-top: 35px;
+    padding-right: 50px;
+}
+
+
+/* skill section********************** 
+************************************************/
+
+
+.container-skills{
+    padding-bottom: 5rem;
+
+}
+.skill-name{
+    font-size: 2rem;
+    font-weight: 600;
+    /* font-family: ;     */
+}
+
+.container-skills{
+    margin: 0px 53px 25px 53px;
+}
+
+
+.skills-title, .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.skill-status{
+    width: 100%;
+   height: 10px;
+   border-radius: 5px;
+    background-color: var(--para);
+}
+.skill-status::before{
+    content: "";
+    position: absolute;
+    border-radius: 5px  ;
+    width: 80%;
+    height: inherit;
+    background-color: var(--imgbg);
+}
+.skill-status-html::before  {
+width: 90%;
+}
+
+.skill-status-css::before  {
+    width: 82%;
+    }
+    
+.skill-status-js::before  {
+    width: 80%;
+    }
+    
+.skill-status-node::before  {
+    width: 75%;
+    }
+    
+.skill-status-exp::before  {
+    width: 77%;
+    }
+    
+.skill-status-mongo::before  {
+    width: 70%;
+    }
+.skill-status span{
+    position: absolute;
+    margin-top: 24px;
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--imgbg);
+    color: var(--para);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-status-html span{
+    left:92%;
+}
+.skill-status-css span{
+    left:84%;
+}
+.skill-status-js span{
+    left:82%;
+}
+.skill-status-node span{
+    left:77%;
+}
+.skill-status-exp span{
+    left:79%;
+}
+.skill-status-mongo span{
+    left:72%;
+}
+.skill-status::after{
+    content: "";
+    position: absolute;
+    width: 00px;
+    height: 0px;
+    border: 0.8rem solid var(--imgbg);
+    border-color: transparent;
+    border-bottom-color:var(--imgbg) ;
+}
+.skill-status-html::after{
+    left:93%
+}
+
+.skill-status-css::after{
+    left:85%
+}
+
+.skill-status-js::after{
+    left:83%
+}
+
+.skill-status-node::after{
+    left:78%
+}
+
+.skill-status-exp::after{
+    left:80%
+}
+
+.skill-status-mongo::after{
+    left:73%
+}
+
+
+
+/* *************contacr**********
+*************************************************** */
+.contact-form{
+border: 2px solid var(--para);
+padding: 10px 20px 10px 20px;
+margin-right: 57px;
+margin-left: 57px;
+margin-bottom: 5rem;
+padding-bottom: 30px;
+display: flex;
+gap: 2rem;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.contact-form input{
+/* display: flex; */
+position: relative;
+width: 100%;
+height: 50px;
+}
+
+
+input[type="text"] {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+input[type="email"]{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+input[type="number"] {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+
+
+/* *******footer****************** 
+*********************************
+*/
+
+/* .pt-4 .mb-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+.text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.copyright ,.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+}
+.icons{
+    gap: 5rem;
+    background-color: var(--shadow);
+}
+.copyright{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* 
+***********************************************
+responsive nav bar
+********************************************** */
+
+
+.menu-icons{
+   display: none;
+}
+.menu-icons [class="fa-solid fa-xmark"]{
+    display: none;
+}
+
+ @media (max-width:767px){
+    .header{
+        box-shadow: none;
+               
+    }
+    .main-logo{
+        z-index: 999;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--imgbg);
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+    }
+    .navbar-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu-icons{
+        display: block;
+        z-index: 9999;
+       
+        /* width: 100%; */
+        /* background-color: var(--imgbg); */
+        
+    }
+    .active .navbar{
+        transform: translateX(0);
+        
+
+    }
+    .active .menu-icons [class="fa-solid fa-bars"]{
+        display: none;
+    }
+    .active .menu-icons [class="fa-solid fa-xmark"]{
+        display: block;
+    }
+} 
+
+
+/* **********************
+responsive page
+**************** */
+
+
+@media (max-width:965px){
+
+    #home,.about,.contact,.footer{
+        min-width: 80rem;
+    }
+    #skill {
+        position: relative;
+        min-width: 70rem;
+        margin-left: 6rem;
+        
+    }
+    
+}
+
+@media (max-width:1200px){
+    .skill-status::before{
+        min-width: 10rem;
+    }
+}
